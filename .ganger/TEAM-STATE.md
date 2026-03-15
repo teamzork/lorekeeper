@@ -6,7 +6,7 @@ _Initialized: 2026-03-15_
 | Phase | Title | Owner | Status | Branch | Updated |
 |---|---|---|---|---|---|
 | 1 | Auth & Worlds | — | merged | — | 2026-03-15 |
-| 2 | Entity Management | — | available | — | — |
+| 2 | Entity Management | @vsm | in-progress | feat/ganger-phase-2-vsm | 2026-03-15 |
 | 3 | Relationships & Linking | — | available | — | — |
 | 4 | Timeline | — | available | — | — |
 | 5 | AI Consistency Checker | — | available | — | — |
