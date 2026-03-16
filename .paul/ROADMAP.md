@@ -8,14 +8,14 @@ Lorekeeper ships in one milestone (v0.1 MVP): six sequential phases that build t
 
 **v0.1 MVP** (v0.1.0)
 Status: In progress
-Phases: 1 of 6 complete
+Phases: 2 of 6 complete
 
 ## Phases
 
 | Phase | Name | Plans | Status | Completed |
 |-------|------|-------|--------|-----------|
 | 1 | Auth & Worlds | 3 | Complete | 2026-03-15 |
-| 2 | Entity Management | TBD | Not started | - |
+| 2 | Entity Management | 3 | Complete | 2026-03-15 |
 | 3 | Relationships & Linking | TBD | Not started | - |
 | 4 | Timeline | TBD | Not started | - |
 | 5 | AI Consistency Checker | TBD | Not started | - |
@@ -53,7 +53,9 @@ Phases: 1 of 6 complete
 - Entity list and detail views per world
 
 **Plans:**
-- [ ] 02-01: TBD
+- [x] 02-01: Entity schema + Convex CRUD + world hub navigation
+- [x] 02-02: Entity list pages + create dialogs + WorldCard link fix
+- [x] 02-03: Entity detail pages + edit/delete
 
 ### Phase 3: Relationships & Linking
 
