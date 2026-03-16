@@ -22,12 +22,12 @@ Co-authors can build and maintain a consistent shared universe bible, with AI ca
 - [x] Auth — sign up, sign in, sign out with password provider — Phase 1
 - [x] Worlds — create world, dashboard, detail page — Phase 1
 - [x] Invitations — invite collaborators by email with role assignment — Phase 1
+- [x] Entity Management — Characters, Places, Factions, Artifacts, Lore CRUD — Phase 2
 
 ### Active (In Progress)
-- [ ] Phase 2: Entity Management — Characters, Places, Factions CRUD with rich text
+- [ ] Phase 3: Relationships & Linking — connect entities (lives in, belongs to, allied with)
 
 ### Planned (Next)
-- [ ] Phase 3: Relationships & Linking — connect entities (lives in, belongs to, allied with)
 - [ ] Phase 4: Timeline — events with dates, linked to entities, visual chronology
 - [ ] Phase 5: AI Consistency Checker — Claude scans world for contradictions on demand
 - [ ] Phase 6: Contribution Workflow — propose changes, review diffs, merge into canon
@@ -74,6 +74,8 @@ Co-authors can build and maintain a consistent shared universe bible, with AI ca
 | Password auth via @convex-dev/auth | Simplest provider for MVP; can add OAuth later | 2026-03-15 | Active |
 | Dark theme with purple primary | Fits fantasy/worldbuilding aesthetic | 2026-03-15 | Active |
 | Routes: /dashboard, /worlds/[id] | Route groups (app)/(auth) for layout separation | 2026-03-15 | Active |
+| Separate tables per entity type | Clean indexing and type safety; unified CRUD via entityType dispatch | 2026-03-15 | Active |
+| Plain text for entity fields (no rich text editor) | MVP simplicity; can upgrade to TipTap/Slate later | 2026-03-15 | Active |
 
 ## Success Metrics
 
@@ -94,4 +96,4 @@ Co-authors can build and maintain a consistent shared universe bible, with AI ca
 
 ---
 *PROJECT.md — Updated when requirements or context change*
-*Last updated: 2026-03-15 after Phase 1*
+*Last updated: 2026-03-15 after Phase 2*

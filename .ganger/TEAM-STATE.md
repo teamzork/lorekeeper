@@ -24,5 +24,8 @@ _Initialized: 2026-03-15_
 
 _Handoff notes will appear here as phases complete._
 
+> **Phase 1 — Auth & Worlds** (@vsm, 2026-03-15)
+> Scaffolding, auth and world creation done. Used Paul for SDD. Schema: users (extended from @convex-dev/auth), worlds (name, description, visibility, ownerId), memberships (worldId, userId, role). Routes: /dashboard, /worlds/[id]. Auth: password provider via @convex-dev/auth. Convex dev project: lorekeeper-dev.
+
 > **Phase 2 — Entity Management** (@vsm, 2026-03-15)
 > Implemented entity management in worlds. 5 entity types (characters, places, factions, artifacts, lore) with full CRUD. Unified convex/entities.ts dispatches by entityType. World detail page restructured as hub with tab navigation. Entity detail pages at /worlds/[worldId]/entities/[entityId]?type=[type].

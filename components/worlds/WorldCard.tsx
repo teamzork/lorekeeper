@@ -25,7 +25,7 @@ export function WorldCard({
   role,
 }: WorldCardProps) {
   return (
-    <Link href={`/app/worlds/${worldId}`}>
+    <Link href={`/worlds/${worldId}`}>
       <div className="group rounded-lg border border-border bg-card p-5 transition-colors hover:border-primary/50">
         <div className="flex items-start justify-between gap-3">
           <h3 className="font-semibold text-card-foreground group-hover:text-primary transition-colors">
