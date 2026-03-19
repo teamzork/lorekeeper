@@ -87,6 +87,33 @@ export default defineSchema({
     updatedAt: v.number(),
   }).index("by_world", ["worldId"]),
 
+  // relationships — directed links between entities
+  relationships: defineTable({
+    worldId: v.id("worlds"),
+    fromId: v.string(),
+    fromType: v.union(
+      v.literal("character"),
+      v.literal("place"),
+      v.literal("faction"),
+      v.literal("artifact"),
+      v.literal("lore")
+    ),
+    toId: v.string(),
+    toType: v.union(
+      v.literal("character"),
+      v.literal("place"),
+      v.literal("faction"),
+      v.literal("artifact"),
+      v.literal("lore")
+    ),
+    label: v.string(),
+    createdBy: v.id("users"),
+    createdAt: v.number(),
+  })
+    .index("by_world", ["worldId"])
+    .index("by_from", ["fromId"])
+    .index("by_to", ["toId"]),
+
   // memberships — links users to worlds with roles
   memberships: defineTable({
     worldId: v.id("worlds"),

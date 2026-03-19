@@ -6,6 +6,8 @@ import { api } from "@/convex/_generated/api";
 import { Button } from "@/components/ui/button";
 import { EditEntityDialog, entityFields } from "@/components/entities/EditEntityDialog";
 import { DeleteEntityDialog } from "@/components/entities/DeleteEntityDialog";
+import { RelationshipsPanel } from "@/components/entities/RelationshipsPanel";
+import { Id } from "@/convex/_generated/dataModel";
 import { ArrowLeft, UserCircle, MapPin, Swords, Gem, BookOpen } from "lucide-react";
 import Link from "next/link";
 
@@ -110,6 +112,12 @@ export default function EntityDetailPage() {
           );
         })}
       </div>
+
+      <RelationshipsPanel
+        entityId={entityId}
+        entityType={entityType}
+        worldId={worldId as Id<"worlds">}
+      />
 
       <div className="mt-8 pt-4 border-t border-border">
         <p className="text-xs text-muted-foreground">

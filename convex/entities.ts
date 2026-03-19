@@ -255,6 +255,20 @@ export const remove = mutation({
     if (!membership) throw new Error("Not a member of this world");
     if (!canWrite(membership.role)) throw new Error("Not authorized");
 
+    // Cascade delete relationships
+    const idStr = entityId.toString();
+    const outgoing = await ctx.db
+      .query("relationships")
+      .withIndex("by_from", (q: any) => q.eq("fromId", idStr))
+      .collect();
+    const incoming = await ctx.db
+      .query("relationships")
+      .withIndex("by_to", (q: any) => q.eq("toId", idStr))
+      .collect();
+    for (const rel of [...outgoing, ...incoming]) {
+      await ctx.db.delete(rel._id);
+    }
+
     await ctx.db.delete(entityId);
   },
 });
