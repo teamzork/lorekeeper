@@ -11,6 +11,7 @@ import {
   BookOpen,
   LayoutDashboard,
   UserCircle,
+  Clock,
 } from "lucide-react";
 
 const tabs = [
@@ -20,6 +21,7 @@ const tabs = [
   { label: "Factions", href: "/entities?type=faction", icon: Swords },
   { label: "Artifacts", href: "/entities?type=artifact", icon: Gem },
   { label: "Lore", href: "/entities?type=lore", icon: BookOpen },
+  { label: "Timeline", href: "/timeline", icon: Clock },
   { label: "Members", href: "/members", icon: Users },
 ];
 
@@ -40,7 +42,8 @@ export function EntityNav() {
       const type = new URLSearchParams(tab.href.split("?")[1]).get("type");
       return pathname === `${basePath}/entities` && searchParams.get("type") === type;
     }
-    return pathname === `${basePath}${tab.href}`;
+    // Timeline and Members: match exact path or subpaths
+    return pathname.startsWith(`${basePath}${tab.href}`);
   }
 
   return (

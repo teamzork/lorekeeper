@@ -87,6 +87,24 @@ export default defineSchema({
     updatedAt: v.number(),
   }).index("by_world", ["worldId"]),
 
+  // events — timeline entries within a world
+  events: defineTable({
+    worldId: v.id("worlds"),
+    name: v.string(),
+    description: v.optional(v.string()),
+    date: v.string(), // free-form in-world date (e.g. "Year 3, Age of Fire")
+    era: v.optional(v.string()), // grouping label (e.g. "First Age")
+    significance: v.optional(v.string()),
+    entityLinks: v.optional(v.array(v.object({
+      entityId: v.string(),
+      entityType: v.string(),
+      entityName: v.string(),
+    }))),
+    createdBy: v.id("users"),
+    createdAt: v.number(),
+    updatedAt: v.number(),
+  }).index("by_world", ["worldId"]),
+
   // memberships — links users to worlds with roles
   memberships: defineTable({
     worldId: v.id("worlds"),

@@ -14,7 +14,7 @@ Co-authors can build and maintain a consistent shared universe bible, with AI ca
 |-----------|-------|
 | Version | 0.1.0 |
 | Status | Prototype |
-| Last Updated | 2026-03-15 |
+| Last Updated | 2026-03-20 |
 
 ## Requirements
 
@@ -23,12 +23,10 @@ Co-authors can build and maintain a consistent shared universe bible, with AI ca
 - [x] Worlds — create world, dashboard, detail page — Phase 1
 - [x] Invitations — invite collaborators by email with role assignment — Phase 1
 - [x] Entity Management — Characters, Places, Factions, Artifacts, Lore CRUD — Phase 2
+- [x] Timeline — events with dates, entity linking, visual chronology — Phase 4
 
 ### Active (In Progress)
-- [ ] Phase 3: Relationships & Linking — connect entities (lives in, belongs to, allied with)
-
-### Planned (Next)
-- [ ] Phase 4: Timeline — events with dates, linked to entities, visual chronology
+- [ ] Phase 3: Relationships & Linking — connect entities (lives in, belongs to, allied with) (@dimka)
 - [ ] Phase 5: AI Consistency Checker — Claude scans world for contradictions on demand
 - [ ] Phase 6: Contribution Workflow — propose changes, review diffs, merge into canon
 
@@ -76,6 +74,10 @@ Co-authors can build and maintain a consistent shared universe bible, with AI ca
 | Routes: /dashboard, /worlds/[id] | Route groups (app)/(auth) for layout separation | 2026-03-15 | Active |
 | Separate tables per entity type | Clean indexing and type safety; unified CRUD via entityType dispatch | 2026-03-15 | Active |
 | Plain text for entity fields (no rich text editor) | MVP simplicity; can upgrade to TipTap/Slate later | 2026-03-15 | Active |
+| Lora serif + Courier Prime mono typography | Literary serif fits worldbuilding; typewriter mono for writer-produced content | 2026-03-20 | Active |
+| Amber/gold accent for temporal markers | Dates need visual distinction from interactive purple elements | 2026-03-20 | Active |
+| Free-form date strings (no date picker) | Fantasy worlds have arbitrary calendars | 2026-03-20 | Active |
+| Entity links denormalized on events | Avoids N+1 queries; simpler than junction table for MVP | 2026-03-20 | Active |
 
 ## Success Metrics
 
@@ -89,11 +91,11 @@ Co-authors can build and maintain a consistent shared universe bible, with AI ca
 |-------|------------|-------|
 | Framework | Next.js App Router | TypeScript |
 | Database | Convex | Real-time, auth included |
-| Frontend | Tailwind CSS + Radix UI | |
+| Frontend | Tailwind CSS + Radix UI | Lora serif, Courier Prime mono |
 | State | Zustand | Local UI state only |
 | AI | Claude API | Consistency checker |
 | Hosting | Vercel | |
 
 ---
 *PROJECT.md — Updated when requirements or context change*
-*Last updated: 2026-03-15 after Phase 2*
+*Last updated: 2026-03-20 after Phase 4*

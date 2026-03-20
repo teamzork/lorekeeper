@@ -93,7 +93,7 @@ export default function EntityDetailPage() {
             <h2 className="text-sm font-medium text-muted-foreground mb-1">
               Description
             </h2>
-            <p className="text-sm whitespace-pre-wrap">{entity.description}</p>
+            <p className="text-sm font-mono whitespace-pre-wrap leading-relaxed">{entity.description}</p>
           </section>
         )}
 
@@ -105,7 +105,7 @@ export default function EntityDetailPage() {
               <h2 className="text-sm font-medium text-muted-foreground mb-1">
                 {field.label}
               </h2>
-              <p className="text-sm whitespace-pre-wrap">{value}</p>
+              <p className="text-sm font-mono whitespace-pre-wrap leading-relaxed">{value}</p>
             </section>
           );
         })}
