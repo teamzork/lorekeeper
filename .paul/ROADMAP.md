@@ -8,7 +8,7 @@ Lorekeeper ships in one milestone (v0.1 MVP): six sequential phases that build t
 
 **v0.1 MVP** (v0.1.0)
 Status: In progress
-Phases: 2 of 6 complete
+Phases: 3 of 6 complete
 
 ## Phases
 
@@ -17,7 +17,7 @@ Phases: 2 of 6 complete
 | 1 | Auth & Worlds | 3 | Complete | 2026-03-15 |
 | 2 | Entity Management | 3 | Complete | 2026-03-15 |
 | 3 | Relationships & Linking | TBD | Not started | - |
-| 4 | Timeline | TBD | Not started | - |
+| 4 | Timeline | 2 | Complete | 2026-03-20 |
 | 5 | AI Consistency Checker | TBD | Not started | - |
 | 6 | Contribution Workflow | TBD | Not started | - |
 
@@ -83,7 +83,8 @@ Phases: 2 of 6 complete
 - Visual timeline view
 
 **Plans:**
-- [ ] 04-01: TBD
+- [x] 04-01: Events schema + CRUD + Timeline tab + list/detail pages + create/edit/delete dialogs
+- [x] 04-02: Entity linking on events + visual chronology view + typography overhaul
 
 ### Phase 5: AI Consistency Checker
 
@@ -118,4 +119,4 @@ Phases: 2 of 6 complete
 
 ---
 *Roadmap created: 2026-03-15*
-*Last updated: 2026-03-15*
+*Last updated: 2026-03-20*

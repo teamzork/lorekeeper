@@ -18,6 +18,9 @@
     --primary: 262 83% 68%;
     --primary-foreground: 0 0% 100%;
 
+    --accent: 45 90% 65%;
+    --accent-foreground: 45 90% 30%;
+
     --destructive: 0 63% 55%;
     --destructive-foreground: 0 0% 100%;
 
@@ -34,5 +37,11 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Typewriter mono for all textareas and prose content */
+  textarea,
+  .font-mono {
+    font-family: var(--font-courier-prime), "Courier New", monospace;
   }
 }

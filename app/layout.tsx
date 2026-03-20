@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lora, Courier_Prime } from "next/font/google";
 import { ConvexAuthNextjsServerProvider } from "@convex-dev/auth/nextjs/server";
 import { ConvexClientProvider } from "./ConvexClientProvider";
 import "./globals.css";
 
-const inter = Inter({
+const lora = Lora({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-lora",
+});
+
+const courierPrime = Courier_Prime({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-courier-prime",
 });
 
 export const metadata: Metadata = {
@@ -22,9 +28,13 @@ export default function RootLayout({
 }) {
   return (
     <ConvexAuthNextjsServerProvider>
-      <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <html
+        lang="en"
+        className={`${lora.variable} ${courierPrime.variable}`}
+        suppressHydrationWarning
+      >
         <body
-          className={`${inter.className} min-h-screen bg-background font-sans antialiased`}
+          className={`${lora.className} min-h-screen bg-background font-serif antialiased`}
           style={{
             backgroundColor: "hsl(224 71% 4%)",
             color: "hsl(213 31% 91%)",
