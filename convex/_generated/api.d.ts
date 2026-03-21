@@ -13,6 +13,7 @@ import type * as entities from "../entities.js";
 import type * as events from "../events.js";
 import type * as http from "../http.js";
 import type * as memberships from "../memberships.js";
+import type * as relationships from "../relationships.js";
 import type * as users from "../users.js";
 import type * as worlds from "../worlds.js";
 
@@ -28,6 +29,7 @@ declare const fullApi: ApiFromModules<{
   events: typeof events;
   http: typeof http;
   memberships: typeof memberships;
+  relationships: typeof relationships;
   users: typeof users;
   worlds: typeof worlds;
 }>;
