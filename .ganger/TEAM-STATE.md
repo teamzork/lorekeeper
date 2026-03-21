@@ -7,7 +7,7 @@ _Initialized: 2026-03-15_
 |---|---|---|---|---|---|
 | 1 | Auth & Worlds | @vsm | merged | feat/ganger-phase-1-vsm | 2026-03-15 |
 | 2 | Entity Management | — | merged | — | 2026-03-15 |
-| 3 | Relationships & Linking | @dimka | review | feat/ganger-phase-3-dimka | 2026-03-20 |
+| 3 | Relationships & Linking | @dimka | review | feat/ganger-phase-3-dimka | 2026-03-21 |
 | 4 | Timeline | — | merged | — | 2026-03-20 |
 | 5 | AI Consistency Checker | — | available | — | — |
 | 6 | Contribution Workflow | — | available | — | — |
@@ -32,3 +32,6 @@ _Handoff notes will appear here as phases complete._
 
 > **Phase 4 — Timeline** (@vsm, 2026-03-20)
 > Added timeline UI, updated UI fonts.
+
+> **Phase 3 — Relationships & Linking** (@dimka, 2026-03-21)
+> Part 3 is done
