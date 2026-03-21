@@ -11,7 +11,7 @@ _Initialized: 2026-03-15_
 | 4 | Timeline | — | merged | — | 2026-03-20 |
 | 5 | AI Consistency Checker | — | available | — | — |
 | 6 | Contribution Workflow | — | available | — | — |
-| 7 | Visual Hierarchy Display | — | available | — | — |
+| 7 | Visual Hierarchy Display | @vsm | in-progress | feat/ganger-phase-7-vsm | 2026-03-21 |
 | 8 | User Profile Page | — | available | — | — |
 
 ## Dependency Graph
