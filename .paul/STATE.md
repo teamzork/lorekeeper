@@ -2,29 +2,29 @@
 
 ## Project Reference
 
-See: .paul/PROJECT.md (updated 2026-03-20 after Phase 4)
+See: .paul/PROJECT.md (updated 2026-03-22 after Phase 7)
 
 **Core value:** Co-authors can build and maintain a consistent shared universe bible, with AI catching contradictions before they become canon.
-**Current focus:** v0.1 MVP — Phases 1-4 complete, Phase 3 merged. Phase 5 ready to start.
+**Current focus:** v0.1 MVP — Phase 7 complete, ready for next phase.
 
 ## Current Position
 
 Milestone: v0.1 MVP (v0.1.0)
-Phase: 5 of 8 (AI Consistency Checker) — Ready
-Plan: Not started
-Status: Phase 3 merged, Phase 5 unblocked
-Last activity: 2026-03-21 — Phase 3 merged, added Phase 7: Visual Hierarchy Display
+Phase: 7 of 8 (Visual Hierarchy Display) — Complete
+Plan: 07-01 complete
+Status: Phase 7 done, ready to plan next phase
+Last activity: 2026-03-22 — Phase 7 complete, transitioned
 
 Progress:
-- Milestone: [█████░░░░░] 50% (4/8 phases)
-- Phase 5: [░░░░░░░░░░] 0%
+- Milestone: [██████░░░░] 63% (5/8 phases)
+- Phase 7: [██████████] 100%
 
 ## Loop Position
 
 Current loop state:
 ```
 PLAN ──▶ APPLY ──▶ UNIFY
-  ○        ○        ○     [Ready for first PLAN in Phase 5 — after Phase 3 merges]
+  ✓        ✓        ✓     [Loop complete — Phase 7 done]
 ```
 
 ## Accumulated Context
@@ -43,24 +43,24 @@ PLAN ──▶ APPLY ──▶ UNIFY
 | Free-form date strings | Phase 4 | Fantasy worlds have arbitrary calendars |
 | Added Phase 7: Visual Hierarchy Display | Phase 5 | Extends milestone scope — visual relationship graph |
 | Added Phase 8: User Profile Page | Phase 5 | Extends milestone scope — profile editing |
+| @xyflow/react + dagre for graph viz | Phase 7 | React Flow for nodes/edges, dagre for layout computation |
+| Type-specific border colors on graph nodes | Phase 7 | purple/emerald/amber/cyan/rose for visual entity distinction |
 
 ### Deferred Issues
-None.
+- Phase 5 plan 05-01 mid-apply: Convex codegen error with "use node" + internalQuery. Needs fix when resuming Phase 5.
 
 ### Blockers/Concerns
-- Phase 7 depends on Phase 3 (merged) + Phase 2 (merged). Unblocked.
+None active.
 
 ## Session Continuity
 
-Last session: 2026-03-20
-Stopped at: Phase 4 complete, Phase 5 blocked on Phase 3
-Next action: Wait for Phase 3 to merge, then /paul:plan for Phase 5
+Last session: 2026-03-22
+Stopped at: Phase 7 complete, transitioned
+Next action: Plan next phase (Phase 3, 5, 6, or 8 — check ROADMAP for dependencies)
 Resume file: .paul/ROADMAP.md
 Resume context:
-- Phase 4 fully complete (2/2 plans)
-- Branch: feat/ganger-phase-4-vsm — ready for handoff/merge
-- Phase 3 in progress by @dimka on feat/ganger-phase-3-dimka
-- Phase 5 cannot start until both Phase 3 and Phase 4 merge
+- Phase 7 branch feat/ganger-phase-7-vsm needs merge to main
+- convex/consistency.ts has TS errors (Phase 5 WIP, not Phase 7)
 
 ---
 *STATE.md — Updated after every significant action*

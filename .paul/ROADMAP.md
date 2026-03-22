@@ -8,7 +8,7 @@ Lorekeeper ships in one milestone (v0.1 MVP): seven phases that build the full c
 
 **v0.1 MVP** (v0.1.0)
 Status: In progress
-Phases: 4 of 8 complete
+Phases: 5 of 8 complete
 
 ## Phases
 
@@ -18,9 +18,9 @@ Phases: 4 of 8 complete
 | 2 | Entity Management | 3 | Complete | 2026-03-15 |
 | 3 | Relationships & Linking | TBD | Not started | - |
 | 4 | Timeline | 2 | Complete | 2026-03-20 |
-| 5 | AI Consistency Checker | TBD | Not started | - |
+| 5 | AI Consistency Checker | 2 | Planning | - |
 | 6 | Contribution Workflow | TBD | Not started | - |
-| 7 | Visual Hierarchy Display | TBD | Not started | - |
+| 7 | Visual Hierarchy Display | 1 | Complete | 2026-03-21 |
 | 8 | User Profile Page | TBD | Not started | - |
 
 ## Phase Details
@@ -101,7 +101,8 @@ Phases: 4 of 8 complete
 - Flagged contradiction report with entity references
 
 **Plans:**
-- [ ] 05-01: TBD
+- [ ] 05-01: Backend — consistencyScans schema + Convex action + Claude API integration + scan queries
+- [ ] 05-02: Frontend — scan trigger UI + results display + status tracking
 
 ### Phase 6: Contribution Workflow
 
@@ -134,7 +135,7 @@ Phases: 4 of 8 complete
 - Visually polished — fits the dark/purple aesthetic
 
 **Plans:**
-- [ ] 07-01: TBD
+- [x] 07-01: Graph page — @xyflow/react + dagre layout, custom entity nodes, relationship edges, EntityNav tab
 
 ### Phase 8: User Profile Page
 
@@ -152,4 +153,4 @@ Phases: 4 of 8 complete
 
 ---
 *Roadmap created: 2026-03-15*
-*Last updated: 2026-03-21*
+*Last updated: 2026-03-22*

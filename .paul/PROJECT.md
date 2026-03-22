@@ -24,11 +24,13 @@ Co-authors can build and maintain a consistent shared universe bible, with AI ca
 - [x] Invitations — invite collaborators by email with role assignment — Phase 1
 - [x] Entity Management — Characters, Places, Factions, Artifacts, Lore CRUD — Phase 2
 - [x] Timeline — events with dates, entity linking, visual chronology — Phase 4
+- [x] Visual Hierarchy Display — interactive entity relationship graph with React Flow + dagre — Phase 7
 
 ### Active (In Progress)
 - [ ] Phase 3: Relationships & Linking — connect entities (lives in, belongs to, allied with) (@dimka)
 - [ ] Phase 5: AI Consistency Checker — Claude scans world for contradictions on demand
 - [ ] Phase 6: Contribution Workflow — propose changes, review diffs, merge into canon
+- [ ] Phase 8: User Profile Page — view and edit personal data
 
 ### Out of Scope
 - Mobile native apps — web-first
@@ -78,6 +80,7 @@ Co-authors can build and maintain a consistent shared universe bible, with AI ca
 | Amber/gold accent for temporal markers | Dates need visual distinction from interactive purple elements | 2026-03-20 | Active |
 | Free-form date strings (no date picker) | Fantasy worlds have arbitrary calendars | 2026-03-20 | Active |
 | Entity links denormalized on events | Avoids N+1 queries; simpler than junction table for MVP | 2026-03-20 | Active |
+| @xyflow/react + dagre for graph visualization | Best React integration; dagre provides clean hierarchical layout | 2026-03-21 | Active |
 
 ## Success Metrics
 
@@ -94,8 +97,9 @@ Co-authors can build and maintain a consistent shared universe bible, with AI ca
 | Frontend | Tailwind CSS + Radix UI | Lora serif, Courier Prime mono |
 | State | Zustand | Local UI state only |
 | AI | Claude API | Consistency checker |
+| Graph | @xyflow/react + dagre | Entity relationship visualization |
 | Hosting | Vercel | |
 
 ---
 *PROJECT.md — Updated when requirements or context change*
-*Last updated: 2026-03-20 after Phase 4*
+*Last updated: 2026-03-22 after Phase 7*
